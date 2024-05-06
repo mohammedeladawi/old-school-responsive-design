@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+:root {
+  --main-padding: 60px;
+  --heading-margin: 30px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+/* Start Header */
+.header {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+  background-image: url(../imgs/header.jpg);
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.header .overlay {
+  background-color: rgb(96 125 139 / 70%);
+}
+
+.header .container {
+  position: relative;
+  z-index: 10;
+}
+
+.header h2 {
+  color: #fff;
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.header .order,
+.header .plan {
+  color: #fff;
+  border: 2px solid #fff;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.header .plan {
+  margin: 5px;
+  cursor: pointer;
+}
+
+@media (min-width: 767px) {
+  .header .plan {
+    float: left;
+    width: calc(50% - 10px);
+  }
+}
+
+.header .order {
+  margin-top: 5px;
+}
+/* End Header */
+
+/* Start Features */
+.features {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+  background-color: #eee;
+}
+
+.features .h1 {
+  margin-bottom: var(--heading-margin);
+}
+
+.features .feat {
+  width: calc(100% / 3 - 20px);
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #777;
+  background-color: #fff;
+}
+
+@media (max-width: 767px) {
+  .features .feat {
+    text-align: center;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .features .feat:first-of-type {
+    width: calc(100% - 20px);
+  }
+  .features .feat:not(:first-of-type) {
+    width: calc(50% - 20px);
+  }
+}
+
+.features .feat h2 {
+  margin-bottom: 10px;
+}
+
+.features .feat p {
+  color: #777;
+  line-height: 1.6;
+}
+
+/* End Features */
+/* Start About Us */
+.about-us {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+}
+.about-us .h1 {
+  margin-bottom: var(--heading-margin);
+}
+.about-us p {
+  color: #777;
+  line-height: 1.6;
+}
+
+/* End About Us */
+/* Start Our Works */
+.our-works {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+  background-color: #eee;
+}
+.our-works .h1 {
+  margin-bottom: var(--heading-margin);
+}
+.our-works .image {
+  margin: 10px;
+  padding: 15px;
+  background-color: #d6d6d6;
+}
+@media (max-width: 767px) {
+  .our-works .image {
+    width: calc(100% - 20px);
+  }
+}
+@media (min-width: 768px) {
+  .our-works .image {
+    width: calc(50% - 20px);
+  }
+}
+@media (min-width: 992px) {
+  .our-works .image {
+    width: calc(100% / 3 - 20px);
+  }
+}
+@media (min-width: 1200px) {
+  .our-works .image {
+    width: calc(100% / 4 - 20px);
+  }
+}
+/* End Our Works */
+/* Start Our Pricing Plans */
+.our-plans {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+  background-color: #444;
+  color: #fff;
+}
+.our-plans .h1 {
+  margin-bottom: var(--heading-margin);
+}
+.our-plans .plan {
+  padding: 20px;
+  border: 3px solid #fff;
+  margin: 5px;
+}
+
+@media (max-width: 767px) {
+  .our-plans .plan {
+    width: calc(100% - 10px);
+  }
+}
+@media (min-width: 768px) {
+  .our-plans .plan {
+    width: calc(100% / 2 - 10px);
+  }
+}
+@media (min-width: 992px) {
+  .our-plans .plan {
+    width: calc(100% / 3 - 10px);
+  }
+}
+.our-plans .plan h3 {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+.our-plans .plan .price {
+  display: block;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+.our-plans .plan li:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+/* End Our Pricing Plans */
+/* Start Testimonails */
+.testimonials {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+}
+.testimonials .h1 {
+  margin-bottom: var(--heading-margin);
+}
+.testimonials .test {
+  padding: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+  .testimonials .test {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .testimonials .test:first-of-type {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 10px;
+  }
+  .testimonials .test:not(:first-of-type) {
+    width: calc(40% - 5px);
+  }
+  .testimonials .test:nth-of-type(2) {
+    margin-left: 10%;
+  }
+  .testimonials .test:nth-of-type(3) {
+    margin-left: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .testimonials .test:not(:first-of-type) {
+    width: calc(50% - 5px);
+  }
+  .testimonials .test:nth-of-type(2) {
+    margin-left: 0;
+  }
+}
+.testimonials .test .image {
+  width: 100px;
+  margin-right: 20px;
+}
+
+.testimonials .test h3 {
+  margin-bottom: 10px;
+}
+.testimonials .test p {
+  color: #555;
+  line-height: 1.6;
+  width: calc(100% - 120px);
+}
+
+@media (max-width: 991px) {
+  .testimonials .test .image,
+  .testimonials .test h3,
+  .testimonials .test p {
+    float: none;
+  }
+  .testimonials .test .image {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .testimonials .test h3 {
+    text-align: center;
+  }
+  .testimonials .test p {
+    text-align: center;
+    width: calc(100%);
+  }
+}
+/* End Testimonails */
+/* Start Product Info */
+.product-info {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+  background-color: #eee;
+}
+
+.product-info .h1 {
+  margin-bottom: var(--heading-margin);
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .product-info .tab {
+    text-align: center;
+  }
+}
+.product-info .tab li {
+  display: inline-block;
+  background-color: #ccc;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.product-info .tab li:hover,
+.product-info .tab li.active {
+  background-color: #fff;
+  color: #047e9c;
+}
+@media (max-width: 767px) {
+  .product-info .tab li {
+    display: block;
+  }
+}
+
+.product-info .content {
+  padding: 20px;
+  background-color: #fff;
+}
+.product-info .content > div {
+  line-height: 1.6;
+  display: none;
+}
+.product-info .content > .show {
+  display: block;
+}
+/* End Product Info */
+/* Start Footer */
+.footer {
+  background-color: #333;
+  text-align: center;
+}
+.footer > div {
+  display: inline-block;
+  color: #fefefe;
+  margin: 10px;
+}
+/* End Footer */
